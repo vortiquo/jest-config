@@ -1,0 +1,72 @@
+{
+  "name": "@vortiquo/jest-config",
+  "version": "0.0.1",
+  "description": "Shared Jest configurations for React, Next.js, and Node.js projects",
+  "type": "module",
+  "license": "MIT",
+  "author": "Vortiquo <dev@vortiquo.com>",
+  "homepage": "https://github.com/vortiquo/jest-config#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vortiquo/jest-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vortiquo/jest-config/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "jest",
+    "jest-config",
+    "testing",
+    "react",
+    "nextjs",
+    "nodejs",
+    "typescript",
+    "shared-config"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./base": "./base.js",
+    "./node": "./node.js",
+    "./react": "./react.js",
+    "./nextjs": "./nextjs.js"
+  },
+  "files": [
+    "index.js",
+    "base.js",
+    "node.js",
+    "react.js",
+    "nextjs.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "jest-transform-stub": "^2.0.0",
+    "ts-jest": "^29.4.0"
+  },
+  "peerDependencies": {
+    "jest": "^30.0.0",
+    "typescript": "^5.0.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^20.2.0",
+    "@commitlint/config-conventional": "^20.2.0",
+    "@ls-lint/ls-lint": "^2.3.1",
+    "@next/eslint-plugin-next": "^16.1.0",
+    "@vortiquo/eslint-config": "^1.1.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^9.39.2",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
+    "prettier": "^3.7.4"
+  },
+  "scripts": {
+    "prepare": "husky",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx --max-warnings=0 --no-warn-ignored .",
+    "lint:fix": "eslint --ext .js,.jsx,.ts,.tsx --fix --max-warnings=0 --no-warn-ignored .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  }
+}

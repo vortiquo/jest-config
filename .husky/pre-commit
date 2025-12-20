@@ -1,0 +1,2 @@
+pnpm ls-lint
+pnpm lint-staged
